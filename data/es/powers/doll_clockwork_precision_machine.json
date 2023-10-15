@@ -1,6 +1,6 @@
 {
 	"name": "Precision Machine",
-	"description": "You can easily see the status of machines, and open a full crafting table at any time.",
+	"description": "You can easily see the status of machines, can open a full crafting table at any time, and can mine blocks at stone level with your bare hands.",
 	"type": "origins:multiple",
 	"machine_sight": {
 		"type": "origins:starting_equipment",
@@ -19,6 +19,25 @@
 		"key": {
 			"key": "key.origins.primary_active",
 			"continuous": false
+		}
+	},
+	"harvesting": {
+		"type": "origins:modify_harvest",
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:mineable/pickaxe"
+		},
+		"allow": true
+	},
+	"break_faster": {
+		"type": "origins:modify_break_speed",
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:mineable/pickaxe"
+		},
+		"modifier": {
+			"operation": "multiply_base",
+			"value": 10
 		}
 	}
 }

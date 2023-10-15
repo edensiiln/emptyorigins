@@ -1,0 +1,13 @@
+{
+	"type": "origins:modify_damage_dealt",
+	"name": "Angel Botherer",
+	"description": "You deal extra damage to angels",
+	"target_condition": {
+		"type": "origins:origin",
+		"origin": "es:angel"
+	},
+	"modifier": {
+		"operation": "add_base_early",
+		"value": 2
+	}
+}

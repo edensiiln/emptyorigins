@@ -3,9 +3,11 @@
 	"description": "lamp",
 	"icon": "minecraft:phantom_membrane",
 	"powers": [
+		"es:moth_wings"
 		"es:moth_nocturnal",
 		"es:moth_diet",
-		"es:doll_botherer"
+		"es:doll_botherer",
+		"es:angel_botherer"
 	],
 	"impact": 1
 }

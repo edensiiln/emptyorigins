@@ -3,9 +3,10 @@
 	"description": "poor little thing?",
 	"icon": "bewitchment:demon_heart",
 	"powers": [
-		"es:demon_fire_resist",
-		"es:demon_soul_speed",
-		"es:demon_unholy"
+		"es:demon_nether_denizen",
+		"es:demon_soul_eater",
+		"es:demon_unholy",
+		"es:angel_botherer"
 	],
-	"impact": 1
+	"impact": 3
 }

@@ -1,0 +1,7 @@
+{
+	"name": "Repaired Wings",
+	"description": "In all their glory",
+	"type": "origins:elytra_flight",
+	"render_elytra": true,
+	"hidden": true
+}

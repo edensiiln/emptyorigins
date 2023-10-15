@@ -1,12 +1,40 @@
 {
-	"type": "origins:starting_equipment",
 	"name": "Broken Wings",
-	"description": "Start with broken elytra",
-	"stacks": [
-		{
-			"item": "minecraft:elytra",
-			"tag": "{Damage: 432, display: {Name: '{\"text\": \"Angel Wings\"}'}}",
-			"slot": 38
+	"description": "There must be a way to fix them...",
+	"type": "origins:multiple",
+	"remove_repair": {
+		"type": "origins:action_on_callback",
+		"entity_action_chosen": {
+			"type": "origins:revoke_power",
+			"power": "es:angel_repaired_wings",
+			"source": "es:angel"
 		}
-	]
+	},
+	"check_for_advancement": {
+		"type": "origins:action_over_time",
+		"interval": 200,
+		"condition": {
+			"type": "origins:advancement",
+			"advancement": "minecraft:nether/root"
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "me has regained their wings"
+				},
+				{
+					"type": "origins:grant_power",
+					"power": "es:angel_repaired_wings",
+					"source": "es:angel"
+				},
+				{
+					"type": "origins:revoke_power",
+					"power": "es:angel_broken_wings",
+					"source": "es:angel"
+				}
+			]
+		}
+	}
 }

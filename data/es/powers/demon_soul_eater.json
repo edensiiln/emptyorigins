@@ -1,0 +1,73 @@
+{
+	"name": "Soul Eater",
+	"description": "You can eat the souls from soul sand and soil, and gain a speed boost on soul sand",
+	"type": "origins:multiple",
+
+	"eat_soul_sand": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:soul_sand"
+			}
+		},
+		"food_component": {
+			"hunger": 4,
+			"saturation": 0.8,
+			"always_edible": false,
+			"snack": false
+		},
+		"entity_action": {
+			"type": "origins:give",
+			"stack": {
+				"item": "minecraft:sand"
+			}
+		}
+	},
+	"eat_soul_soil": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:soul_soil"
+			}
+		},
+		"food_component": {
+			"hunger": 4,
+			"saturation": 0.8,
+			"always_edible": false,
+			"snack": false
+		},
+		"entity_action": {
+			"type": "origins:give",
+			"stack": {
+				"item": "minecraft:dirt"
+			}
+		}
+	},
+	"eat_souls_tooltip": {
+		"type": "origins:tooltip",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": [
+				{
+					"item": "minecraft:soul_sand"
+				},
+				{
+					"item": "minecraft:soul_soil"
+				}
+			]
+		},
+			"text": {
+			"text": "edible",
+			"color": "gray"
+		}
+	},
+	"speed": {
+		"type": "apugli:modify_soul_speed",
+		"modifier": {
+			"operation": "addition",
+			"value": 1
+		}
+	}
+}

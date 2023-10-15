@@ -1,9 +1,0 @@
-{
-	"name": "Soul Speed",
-	"description": "You gain a speed boost on soul sand",
-	"type": "apugli:modify_soul_speed",
-	"modifier": {
-		"operation": "addition",
-		"value": 1
-	}
-}

@@ -4,6 +4,7 @@
 	"icon": "minecraft:feather",
 	"powers": [
 		"es:angel_broken_wings",
+		"es:angel_repaired_wings",
 		"es:angel_halo_glow",
 		"es:angel_ichor"
 	],
