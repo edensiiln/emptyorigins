@@ -1,0 +1,138 @@
+{
+	"name": "Porcelain Body",
+	"description": "You make porcelain sounds, repair with clay blocks and balls, take less damage from fire and more from falling",
+	"type": "origins:multiple",
+
+	"hurt": {
+		"type": "apugli:custom_hurt_sound",
+		"sound": "minecraft:block.decorated_pot.hit"
+	},
+	"step": {
+		"type": "apugli:custom_footstep",
+		"sound": "minecraft:block.decorated_pot.step"
+	},
+	"death": {
+		"type": "apugli:custom_death_sound",
+		"sound": "minecraft:block.decorated_pot.break"
+	},
+
+	"eat_clay": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:clay"
+			}
+		},
+		"food_component": {
+			"hunger": 0,
+			"saturation": 1,
+			"always_edible": true,
+			"snack": false
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 8
+		}
+	},
+	"eat_clay_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible: 4 hearts",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:clay"
+			}
+		}
+	},
+	"eat_clay_ball": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:clay_ball"
+			}
+		},
+		"food_component": {
+			"hunger": 0,
+			"saturation": 1,
+			"always_edible": true,
+			"snack": true
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 2
+		}
+	},
+	"eat_clay_ball_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible: 1 heart",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:clay_ball"
+			}
+		}
+	},
+	"eat_sherds": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:decorated_pot_sherds"
+			}
+		},
+		"food_component": {
+			"hunger": 0,
+			"saturation": 1,
+			"always_edible": true,
+			"snack": true
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 3
+		}
+	},
+	"eat_sherds_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible: 1.5 hearts",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:decorated_pot_sherds"
+			}
+		}
+	},
+
+	"damage_fire": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:in_fire"
+		},
+		"modifier": {
+			"operation": "add_base_early",
+			"value": -1.0
+		}
+	},
+	"damage_fall": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:is_fall"
+		},
+		"modifier": {
+			"operation": "multiply_total_additive",
+			"value": 0.25
+		}
+	}
+}

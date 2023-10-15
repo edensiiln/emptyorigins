@@ -1,0 +1,83 @@
+{
+	"name": "Clockwork Body",
+	"description": "You make metal sounds and repair with brass ingots and sheets",
+	"type": "origins:multiple",
+	
+	"hurt": {
+		"type": "apugli:custom_hurt_sound",
+		"sound": "minecraft:block.metal.hit"
+	},
+	"step": {
+		"type": "apugli:custom_footstep",
+		"sound": "minecraft:block.metal.step"
+	},
+	"death": {
+		"type": "apugli:custom_death_sound",
+		"sound": "minecraft:block.metal.break"
+	},
+
+	"eat_brass_ingot": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "create:brass_ingot"
+			}
+		},
+		"food_component": {
+			"hunger": 0,
+			"saturation": 1,
+			"always_edible": true,
+			"snack": false
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 6
+		}
+	},
+	"eat_brass_ingot_tooltip": {
+		"type": "origins:tooltip",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "create:brass_ingot"
+			}
+		},
+			"text": {
+			"text": "edible: 3 hearts",
+			"color": "gray"
+		}
+	},
+	"eat_brass_sheet": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "create:brass_sheet"
+			}
+		},
+		"food_component": {
+			"hunger": 0,
+			"saturation": 1,
+			"always_edible": true,
+			"snack": true
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 10
+		}
+	},
+	"eat_brass_sheet_tooltip": {
+		"type": "origins:tooltip",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "create:brass_sheet"
+			}
+		},
+		"text": {
+			"text": "edible: 5 hearts",
+			"color": "gray"
+		}
+	}
+}

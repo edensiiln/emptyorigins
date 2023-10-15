@@ -1,0 +1,24 @@
+{
+	"name": "Precision Machine",
+	"description": "You can easily see the status of machines, and open a full crafting table at any time.",
+	"type": "origins:multiple",
+	"machine_sight": {
+		"type": "origins:starting_equipment",
+		"stacks": [
+			{
+				"item": "create:goggles",
+				"slot": 39
+			}
+		]
+	},
+	"internal_crafting": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:crafting_table"
+		},
+		"key": {
+			"key": "key.origins.primary_active",
+			"continuous": false
+		}
+	}
+}

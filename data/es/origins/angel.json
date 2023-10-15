@@ -1,0 +1,11 @@
+{
+	"name": "Angel",
+	"description": "poor little thing",
+	"icon": "minecraft:feather",
+	"powers": [
+		"es:angel_broken_wings",
+		"es:angel_halo_glow",
+		"es:angel_ichor"
+	],
+	"impact": 1
+}

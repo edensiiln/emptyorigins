@@ -1,0 +1,12 @@
+{
+	"name": "Porcelain Doll",
+	"description": "awawa",
+	"icon": "minecraft:white_glazed_terracotta",
+	"powers": [
+		"es:dolls_synthetic",
+		"es:doll_porcelain_body",
+		"es:doll_porcelain_hollow",
+		"es:dolls_flower_diet"
+	],
+	"impact": 1
+}

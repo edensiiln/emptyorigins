@@ -1,0 +1,73 @@
+{
+	"name": "Made of Goop",
+	"description": "You make slimy sounds and can eat slime blocks and balls",
+	"type": "origins:multiple",
+
+	"hurt": {
+		"type": "apugli:custom_hurt_sound",
+		"sound": "minecraft:block.slime_block.hit"
+	},
+	"step": {
+		"type": "apugli:custom_footstep",
+		"sound": "minecraft:block.slime_block.step"
+	},
+	"death": {
+		"type": "apugli:custom_death_sound",
+		"sound": "minecraft:block.slime_block.break"
+	},
+
+	"eat_slime_block": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "tconstruct:slime_block"
+			}
+		},
+		"food_component": {
+			"hunger": 4,
+			"saturation": 1,
+			"snack": false
+		}
+	},
+	"eat_slime_block_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "tconstruct:slime_block"
+			}
+		}
+	},
+	"eat_slime_ball": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "c:slimeballs"
+			}
+		},
+		"food_component": {
+			"hunger": 1,
+			"saturation": 1,
+			"snack": true
+		}
+	},
+	"eat_slime_ball_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "c:slimeballs"
+			}
+		}
+	}
+}

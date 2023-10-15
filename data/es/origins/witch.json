@@ -1,0 +1,10 @@
+{
+	"name": "Witch",
+	"description": "Ehehehehe",
+	"icon": "bewitchment:hedgewitch_hat",
+	"powers": [
+		"es:witch_tools",
+		"es:doll_botherer"
+	],
+	"impact": 1
+}

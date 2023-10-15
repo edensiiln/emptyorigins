@@ -1,0 +1,60 @@
+{
+	"name": "Flower Diet",
+	"description": "You can eat flowers!",
+	"type": "origins:multiple",
+
+	"eat_flower_small": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:small_flowers"
+			}
+		},
+		"food_component": {
+			"hunger": 1,
+			"saturation": 1.2,
+			"snack": true
+		}
+	},
+	"flower_small_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:small_flowers"
+			}
+		}
+	},
+	"eat_flower_tall": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:tall_flowers"
+			}
+		},
+		"food_component": {
+			"hunger": 3,
+			"saturation": 1.2,
+			"snack": false
+		}
+	},
+	"flower_tall_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:tall_flowers"
+			}
+		}
+	}
+}

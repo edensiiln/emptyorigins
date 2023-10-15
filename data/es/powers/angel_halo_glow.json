@@ -1,0 +1,31 @@
+{
+	"name": "Halo Glow",
+	"description": "You give off light. Players can see you glow, and mobs can detect you from further away.",
+	"type": "origins:multiple",
+	"glow": {
+		"type": "origins:self_glow",
+		"red": 1.0,
+		"green": 1.0,
+		"blue": 1.0
+	},
+	"detection": {
+		"type": "origins:action_on_callback",
+		"entity_action_chosen": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "scale persist set true @s"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:visibility 1.2 @s"
+				}
+			]
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "scale reset @s"
+		}
+	}
+}

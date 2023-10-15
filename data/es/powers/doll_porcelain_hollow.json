@@ -1,0 +1,12 @@
+{
+	"name": "Hollow",
+	"description": "You have a few extra inventory slots",
+	"type": "origins:inventory",
+	"container_type": "dropper",
+	"title": "Doll Slots",
+	"drop_on_death": true,
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": false
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"type": "origins:starting_equipment",
+	"name": "Tools of the Trade",
+	"description": "Start with a witch hat, a maid spawn egg and a cake to feed it, a book on witchcraft, and a few leads (usable on players!).",
+	"stacks": [
+		{
+			"item": "bewitchment:hedgewitch_hat",
+			"tag": "{display: {Name: '{\"text\": \"Big Hat\"}'}}",
+			"slot": 39
+		},
+		{
+			"item": "umu_little_maid:little_maid_spawn_egg"
+		},
+		{
+			"item": "minecraft:cake"
+		},
+		{
+			"item": "bewitchment:book_of_shadows"
+		},
+		{
+			"item": "minecraft:lead",
+			"amount": 3
+		}
+	]
+}

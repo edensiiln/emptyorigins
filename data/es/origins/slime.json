@@ -1,0 +1,10 @@
+{
+	"name": "Slime",
+	"description": "squish",
+	"icon": "minecraft:slime_ball",
+	"powers": [
+		"es:slime_body",
+		"es:slime_bouncy"
+	],
+	"impact": 1
+}

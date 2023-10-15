@@ -1,0 +1,11 @@
+{
+	"name": "Moth",
+	"description": "lamp",
+	"icon": "minecraft:phantom_membrane",
+	"powers": [
+		"es:moth_nocturnal",
+		"es:moth_diet",
+		"es:doll_botherer"
+	],
+	"impact": 1
+}

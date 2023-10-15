@@ -1,0 +1,115 @@
+{
+	"name": "Golden Body",
+	"description": "You make metallic sounds and repair with gold ingots and nuggets",
+	"type": "origins:multiple",
+	
+	"hurt": {
+		"type": "apugli:custom_hurt_sound",
+		"sound": "minecraft:block.metal.hit"
+	},
+	"step": {
+		"type": "apugli:custom_footstep",
+		"sound": "minecraft:block.metal.step"
+	},
+	"death": {
+		"type": "apugli:custom_death_sound",
+		"sound": "minecraft:block.metal.break"
+	},
+
+	"eat_gold_ingot": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+		"food_component": {
+			"hunger": 0,
+			"saturation": 1,
+			"always_edible": true,
+			"snack": false
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 18
+		}
+	},
+	"eat_gold_ingot_tooltip": {
+		"type": "origins:tooltip",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+			"text": {
+			"text": "edible: 9 hearts",
+			"color": "gray"
+		}
+	},
+	"eat_gold_nugget": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:gold_nugget"
+			}
+		},
+		"food_component": {
+			"hunger": 0,
+			"saturation": 1,
+			"always_edible": true,
+			"snack": true
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 2
+		}
+	},
+	"eat_gold_nugget_tooltip": {
+		"type": "origins:tooltip",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:gold_nugget"
+			}
+		},
+		"text": {
+			"text": "edible: 1 heart",
+			"color": "gray"
+		}
+	},
+	"eat_gold_sheet": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "create:golden_sheet"
+			}
+		},
+		"food_component": {
+			"hunger": 0,
+			"saturation": 1,
+			"always_edible": true,
+			"snack": true
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 18
+		}
+	},
+	"eat_gold_sheet_tooltip": {
+		"type": "origins:tooltip",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "create:golden_sheet"
+			}
+		},
+			"text": {
+			"text": "edible: 9 hearts",
+			"color": "gray"
+		}
+	}
+}

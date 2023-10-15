@@ -1,0 +1,12 @@
+{
+	"name": "Gold Doll",
+	"description": "the best game engine out there",
+	"icon": "minecraft:gold_block",
+	"powers": [
+		"es:dolls_synthetic",
+		"es:doll_golden_body",
+		"es:doll_golden_tools",
+		"es:dolls_flower_diet"
+	],
+	"impact": 1
+}

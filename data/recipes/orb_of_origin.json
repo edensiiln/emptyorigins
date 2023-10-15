@@ -1,0 +1,17 @@
+{
+	"type": "crafting_shaped",
+	"pattern":[
+		"SOS",
+	],
+	"key": {
+		"O": {
+			"item": "minecraft:ender_pearl"
+		},
+		"S": {
+			"item": "minecraft:slime_ball"
+		}
+	},
+	"result": {
+		"item": "origins:orb_of_origin"
+	}
+}

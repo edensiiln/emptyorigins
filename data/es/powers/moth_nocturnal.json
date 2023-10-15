@@ -1,0 +1,17 @@
+{
+	"name": "Nocturnal",
+	"description": "You can see in the dark somewhat, and don't suffer from insomnia",
+	"type": "origins:multiple",
+
+	"night_vision": {
+		"type": "origins:night_vision",
+		"strength": 0.2
+	},
+	"insomnia": {
+		"type": "origins:modify_insomnia_ticks",
+		"modifier": {
+			"operation": "set_total",
+			"value": 0
+		}
+	}
+}

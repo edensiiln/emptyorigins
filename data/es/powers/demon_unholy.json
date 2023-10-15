@@ -1,0 +1,25 @@
+{
+	"name": "Unholy",
+	"description": "You take damage from walking on silver blocks",
+	"type": "origins:multiple",
+	"smiteTODO": {
+		"type": "origins:simple"
+	},
+	"silver": {
+		"type": "origins:damage_over_time",
+		"interval": 10,
+		"onset_delay": 2,
+		"damage": 1,
+		"damage_type": "minecraft:magic",
+		"condition": {
+			"type": "origins:on_block",
+			"block_condition": {
+				"type": "origins:block",
+				"block": "bewitchment:silver_block"
+			}
+		}
+	},
+	"saltTODO": {
+		"type": "origins:simple"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"name": "Wooden Doll",
+	"description": "awawa",
+	"icon": "minecraft:oak_log",
+	"powers": [
+		"es:doll_wooden_body",
+		"es:doll_wooden_photosynthesis",
+		"es:dolls_flower_diet"
+	],
+	"impact": 1
+}

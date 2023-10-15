@@ -1,0 +1,11 @@
+{
+	"name": "Demon",
+	"description": "poor little thing?",
+	"icon": "bewitchment:demon_heart",
+	"powers": [
+		"es:demon_fire_resist",
+		"es:demon_soul_speed",
+		"es:demon_unholy"
+	],
+	"impact": 1
+}

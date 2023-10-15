@@ -1,0 +1,129 @@
+{
+	"name": "Moth Diet",
+	"description": "You can eat wool, leather, and rabbit hide",
+	"type": "origins:multiple",
+	"wool": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:wool"
+			}
+		},
+		"food_component": {
+			"hunger": 2,
+			"saturation": 1.5,
+			"snack": false
+		}
+	},
+	"wool_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:wool"
+			}
+		}
+	},
+	"leather": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:leather"
+			}
+		},
+		"food_component": {
+			"hunger": 1,
+			"saturation": 1,
+			"snack": false
+		}
+	},
+	"leather_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:leather"
+			}
+		}
+	},
+	"rabbit_hide": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:rabbit_hide"
+			}
+		},
+		"food_component": {
+			"hunger": 1,
+			"saturation": 1,
+			"snack": true
+		}
+	},
+	"rabbit_hide_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:rabbit_hide"
+			}
+		}
+	},
+	"eat_blahaj": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": [
+				{
+					"item": "blahaj:blue_shark"
+				},
+				{
+					"item": "blahaj:gray_shark"
+				},
+				{
+					"item": "blahaj:bread"
+				}
+			]
+		},
+		"food_component": {
+			"hunger": 12,
+			"saturation": 1.5,
+			"snack": false
+		}
+	},
+	"eat_blahaj_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": [
+				{
+					"item": "blahaj:blue_shark"
+				},
+				{
+					"item": "blahaj:gray_shark"
+				},
+				{
+					"item": "blahaj:bread"
+				}
+			]
+		}
+	}
+}

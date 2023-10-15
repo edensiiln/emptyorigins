@@ -1,0 +1,11 @@
+{
+	"name": "Divinity",
+	"description": "overpowered, as gods should be",
+	"icon": "minecraft:nether_star",
+	"powers": [
+		"es:divinity_invulnerable",
+		"es:divinity_flight"
+	],
+	"impact": 3,
+	"unchoosable": true
+}

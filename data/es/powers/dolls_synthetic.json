@@ -1,0 +1,17 @@
+{
+	"name": "Synthetic",
+	"description": "You don't have passive health regeneration, and instead repair yourself using your body's materials. You don't suffer from insomnia.",
+	"type": "origins:multiple",
+
+	"no_regen": {
+		"type": "origins:disable_regen"
+	},
+
+	"sleepless": {
+		"type": "origins:modify_insomnia_ticks",
+		"modifier": {
+			"operation": "set_total",
+			"value": 0
+		}
+	}
+}

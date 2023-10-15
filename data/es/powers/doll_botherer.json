@@ -1,0 +1,30 @@
+{
+	"type": "origins:modify_damage_dealt",
+	"name": "Doll Botherer",
+	"description": "You deal extra damage to dolls",
+	"target_condition": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:origin",
+				"origin": "es:doll_clockwork"
+			},
+			{
+				"type": "origins:origin",
+				"origin": "es:doll_golden"
+			},
+			{
+				"type": "origins:origin",
+				"origin": "es:doll_porcelain"
+			},
+			{
+				"type": "origins:origin",
+				"origin": "es:doll_wooden"
+			}
+		]
+	},
+	"modifier": {
+		"operation": "add_base_early",
+		"value": 2
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"name": "Photosynthesis",
+	"description": "Your hunger refills in sunlight",
+	"type": "origins:action_over_time",
+	"interval": 400,
+	"entity_action": {
+		"type": "origins:feed",
+		"food": 1,
+		"saturation": 1
+	},
+	"condition": {
+	    "type": "origins:exposed_to_sun"
+	}
+}

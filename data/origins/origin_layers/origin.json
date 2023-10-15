@@ -1,0 +1,17 @@
+{
+  "name": "Origin",
+  "origins": [
+    "es:angel",
+    "es:demon",
+    "es:doll_clockwork",
+    "es:doll_golden",
+    "es:doll_porcelain",
+    "es:doll_wooden",
+    "es:moth",
+    "es:slime",
+    "es:witch",
+    "es:divinity"
+  ],
+  "replace": true,
+  "order": 0
+}

@@ -1,0 +1,12 @@
+{
+	"type": "origins:starting_equipment",
+	"name": "Broken Wings",
+	"description": "Start with broken elytra",
+	"stacks": [
+		{
+			"item": "minecraft:elytra",
+			"tag": "{Damage: 432, display: {Name: '{\"text\": \"Angel Wings\"}'}}",
+			"slot": 38
+		}
+	]
+}

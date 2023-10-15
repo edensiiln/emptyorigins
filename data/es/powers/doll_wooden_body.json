@@ -1,0 +1,85 @@
+{
+	"name": "Wooden Body",
+	"description": "You make wooden sounds, can eat saplings and sticks, and take more damage from fire",
+	"type": "origins:multiple",
+	
+	"hurt": {
+		"type": "apugli:custom_hurt_sound",
+		"sound": "minecraft:block.wood.hit"
+	},
+	"step": {
+		"type": "apugli:custom_footstep",
+		"sound": "minecraft:block.wood.step"
+	},
+	"death": {
+		"type": "apugli:custom_death_sound",
+		"sound": "minecraft:block.wood.break"
+	},
+
+	"eat_sapling": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:saplings"
+			}
+		},
+		"food_component": {
+			"hunger": 3,
+			"saturation": 1.2,
+			"snack": false
+		}
+	},
+	"plank_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:saplings"
+			}
+		}
+	},
+	"stick": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:stick"
+			}
+		},
+		"food_component": {
+			"hunger": 1,
+			"saturation": 0.5,
+			"snack": true
+		}
+	},
+	"stick_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:stick"
+			}
+		}
+	},
+
+	"damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:is_fire"
+		},
+		"modifier": {
+			"operation": "add_base_early",
+			"value": 1.0
+		}
+	}
+}

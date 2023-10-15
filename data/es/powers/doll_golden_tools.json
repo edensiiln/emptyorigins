@@ -1,0 +1,46 @@
+{
+	"name": "Golden Tools",
+	"description": "Your golden equipment lasts significantly longer (a little more than iron)",
+	"type": "apugli:action_on_durability_change",
+	"item_condition": {
+		"type": "apoli:ingredient",
+		"ingredient": [
+			{
+				"item": "minecraft:golden_shovel"
+			},
+			{
+				"item": "minecraft:golden_pickaxe"
+			},
+			{
+				"item": "minecraft:golden_axe"
+			},
+			{
+				"item": "minecraft:golden_hoe"
+			},
+			{
+				"item": "minecraft:golden_sword"
+			},
+			{
+				"item": "minecraft:golden_helmet"
+			},
+			{
+				"item": "minecraft:golden_chestplate"
+			},
+			{
+				"item": "minecraft:golden_leggings"
+			},
+			{
+				"item": "minecraft:golden_boots"
+			}
+		]
+	},
+	"decrease_item_action": {
+		"type": "apoli:chance",
+		"chance": 0.9,
+		"action": {
+			"type": "origins:damage",
+			"amount": -1,
+			"ignore_unbreaking": true
+		}
+	}
+}
