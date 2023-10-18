@@ -19,6 +19,7 @@ content mods:
 - [Create](https://modrinth.com/mod/create-fabric) \(or [Create Fabric DM-Earth Edition](https://modrinth.com/mod/create-fabric-dme-edition) at the time of writing this\)
 - [Hephaestus](https://modrinth.com/mod/hephaestus) \(used for tags\)
 - [UMU Little Maid](https://modrinth.com/mod/umu-little-maid)
+- [Deeper and Darker](https://modrinth.com/mod/deeperdarker)
 
 ## notes
 This datapack was designed for a particular modpack and as such, interacts with a lot of content mods. Using it without some of those mods may still partially work, but some origins and powers will fail to load.
