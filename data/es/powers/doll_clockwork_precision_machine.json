@@ -1,6 +1,6 @@
 {
 	"name": "Precision Machine",
-	"description": "You can easily see the status of machines, can open a full crafting table at any time, and can mine blocks at stone level with your bare hands.",
+	"description": "You can easily see the status of machines, can open a full crafting table at any time, can always harvest blocks that need a pickaxe, and can break blocks faster.",
 	"type": "origins:multiple",
 	"machine_sight": {
 		"type": "origins:starting_equipment",
@@ -37,7 +37,7 @@
 		},
 		"modifier": {
 			"operation": "multiply_base",
-			"value": 10
+			"value": 1.2
 		}
 	}
 }

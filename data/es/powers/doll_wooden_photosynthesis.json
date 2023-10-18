@@ -1,14 +1,25 @@
 {
 	"name": "Photosynthesis",
-	"description": "Your hunger refills in sunlight",
-	"type": "origins:action_over_time",
-	"interval": 400,
-	"entity_action": {
-		"type": "origins:feed",
-		"food": 1,
-		"saturation": 1
+	"description": "Your hunger refills in sunlight, and you have 5 extra hearts",
+	"type": "origins:multiple",
+	"feed": {
+		"type": "origins:action_over_time",
+		"interval": 200,
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 2,
+			"saturation": 0.5
+		},
+		"condition": {
+		    "type": "origins:exposed_to_sun"
+		}
 	},
-	"condition": {
-	    "type": "origins:exposed_to_sun"
+	"health": {
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"value": 10,
+			"operation": "addition"
+		}
 	}
 }

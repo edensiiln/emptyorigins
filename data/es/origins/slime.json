@@ -4,7 +4,8 @@
 	"icon": "minecraft:slime_ball",
 	"powers": [
 		"es:slime_body",
-		"es:slime_bouncy"
+		"es:slime_bouncy",
+		"es:slime_aquatic"
 	],
 	"impact": 1
 }

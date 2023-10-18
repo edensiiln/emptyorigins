@@ -1,0 +1,16 @@
+{
+	"name": "Grit",
+	"description": "You deal more damage at low health",
+	"type": "origins:conditioned_attribute",
+		"condition": {
+		"type": "origins:health",
+		"comparison": "<=",
+		"compare_to": 10
+	},
+	"tick_rate": 20,
+	"modifier": {
+		"attribute": "minecraft:generic.attack_damage",
+		"value": 1.5,
+		"operation": "multiply_total"
+	}
+}

@@ -1,19 +1,28 @@
 {
 	"name": "Fleshsteel Body",
-	"description": "You make metal sounds and repair with iron ingots and sheets",
+	"description": "You make metal sounds, have extra armor, and repair with iron ingots and sheets",
 	"type": "origins:multiple",
 	
 	"hurt": {
 		"type": "apugli:custom_hurt_sound",
-		"sound": "minecraft:block.metal.hit"
+		"sound": "minecraft:block.netherite_block.hit"
 	},
 	"step": {
 		"type": "apugli:custom_footstep",
-		"sound": "minecraft:block.metal.step"
+		"sound": "minecraft:block.netherite_block.step"
 	},
 	"death": {
 		"type": "apugli:custom_death_sound",
-		"sound": "minecraft:block.metal.break"
+		"sound": "minecraft:block.netherite_block.break"
+	},
+
+	"extra_armor": {
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.armor",
+			"value": 4,
+			"operation": "addition"
+		}
 	},
 
 	"eat_iron_ingot": {

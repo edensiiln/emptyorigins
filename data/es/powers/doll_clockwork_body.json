@@ -5,15 +5,15 @@
 	
 	"hurt": {
 		"type": "apugli:custom_hurt_sound",
-		"sound": "minecraft:block.metal.hit"
+		"sound": "minecraft:block.copper.hit"
 	},
 	"step": {
 		"type": "apugli:custom_footstep",
-		"sound": "minecraft:block.metal.step"
+		"sound": "minecraft:block.copper.step"
 	},
 	"death": {
 		"type": "apugli:custom_death_sound",
-		"sound": "minecraft:block.metal.break"
+		"sound": "minecraft:block.copper.break"
 	},
 
 	"eat_brass_ingot": {
