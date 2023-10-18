@@ -1,0 +1,10 @@
+{
+	"name": "Fleshsteel Doll",
+	"description": "awawa",
+	"icon": "minecraft:iron_block",
+	"powers": [
+		"es:doll_fleshsteel_body",
+		"es:dolls_flower_diet"
+	],
+	"impact": 1
+}

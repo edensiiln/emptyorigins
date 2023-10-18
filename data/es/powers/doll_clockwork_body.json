@@ -32,7 +32,7 @@
 		},
 		"entity_action": {
 			"type": "origins:heal",
-			"amount": 6
+			"amount": 8
 		}
 	},
 	"eat_brass_ingot_tooltip": {
@@ -44,7 +44,7 @@
 			}
 		},
 			"text": {
-			"text": "edible: 3 hearts",
+			"text": "edible: 4 hearts",
 			"color": "gray"
 		}
 	},
@@ -64,7 +64,7 @@
 		},
 		"entity_action": {
 			"type": "origins:heal",
-			"amount": 10
+			"amount": 6
 		}
 	},
 	"eat_brass_sheet_tooltip": {
@@ -76,7 +76,7 @@
 			}
 		},
 		"text": {
-			"text": "edible: 5 hearts",
+			"text": "edible: 3 hearts",
 			"color": "gray"
 		}
 	}

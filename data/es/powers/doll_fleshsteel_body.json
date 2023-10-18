@@ -1,6 +1,6 @@
 {
-	"name": "Golden Body",
-	"description": "You make metallic sounds and repair with gold ingots and plates",
+	"name": "Fleshsteel Body",
+	"description": "You make metal sounds and repair with iron ingots and sheets",
 	"type": "origins:multiple",
 	
 	"hurt": {
@@ -16,12 +16,12 @@
 		"sound": "minecraft:block.metal.break"
 	},
 
-	"eat_gold_ingot": {
+	"eat_iron_ingot": {
 		"type": "apugli:edible_item",
 		"item_condition": {
 			"type": "origins:ingredient",
 			"ingredient": {
-				"item": "minecraft:gold_ingot"
+				"item": "minecraft:iron_ingot"
 			}
 		},
 		"food_component": {
@@ -32,28 +32,28 @@
 		},
 		"entity_action": {
 			"type": "origins:heal",
-			"amount": 12
+			"amount": 8
 		}
 	},
-	"eat_gold_ingot_tooltip": {
+	"eat_brass_ingot_tooltip": {
 		"type": "origins:tooltip",
 		"item_condition": {
 			"type": "origins:ingredient",
 			"ingredient": {
-				"item": "minecraft:gold_ingot"
+				"item": "minecraft:iron_ingot"
 			}
 		},
 			"text": {
-			"text": "edible: 6 hearts",
+			"text": "edible: 4 hearts",
 			"color": "gray"
 		}
 	},
-	"eat_gold_sheet": {
+	"eat_iron_sheet": {
 		"type": "apugli:edible_item",
 		"item_condition": {
 			"type": "origins:ingredient",
 			"ingredient": {
-				"item": "create:golden_sheet"
+				"item": "create:iron_sheet"
 			}
 		},
 		"food_component": {
@@ -64,19 +64,19 @@
 		},
 		"entity_action": {
 			"type": "origins:heal",
-			"amount": 10
+			"amount": 6
 		}
 	},
-	"eat_gold_sheet_tooltip": {
+	"eat_brass_sheet_tooltip": {
 		"type": "origins:tooltip",
 		"item_condition": {
 			"type": "origins:ingredient",
 			"ingredient": {
-				"item": "create:golden_sheet"
+				"item": "create:iron_sheet"
 			}
 		},
-			"text": {
-			"text": "edible: 5 hearts",
+		"text": {
+			"text": "edible: 3 hearts",
 			"color": "gray"
 		}
 	}
