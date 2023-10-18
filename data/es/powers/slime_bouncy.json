@@ -1,6 +1,6 @@
 {
 	"name": "Bouncy",
-	"description": "You bounce and take reduced damage when falling from a great height. Sneak to cancel bounce.",
+	"description": "You take no fall damage, and bounce when falling from a great height. Sneak to cancel bounce.",
 	"type": "origins:multiple",
 	"uppies": {
 		"type": "origins:action_on_land",
@@ -29,15 +29,9 @@
 			"type": "origins:in_tag",
 			"tag": "minecraft:is_fall"
 		},
-		"modifiers": [
-			{
-				"operation": "add_base_early",
-				"value": -1.0
-			},
-			{
-				"operation": "multiply_total_additive",
-				"value": -0.25
-			}
-		]
+		"modifier": {
+			"operation": "multiply_total_additive",
+			"value": -1
+		}
 	}
 }

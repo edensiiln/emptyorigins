@@ -1,0 +1,13 @@
+{
+	"type": "origins:entity_glow",
+	"use_teams": false,
+	"red": 0.0,
+	"green": 0.3,
+	"blue": 0.2,
+	"bientity_condition": {
+		"type": "origins:actor_condition",
+		"condition": {
+			"type": "origins:sneaking"
+		}
+	}
+}

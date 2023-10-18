@@ -4,7 +4,13 @@
 	"icon": "bewitchment:hedgewitch_hat",
 	"powers": [
 		"es:witch_tools",
+		"es:witch_secret_of_universe",
+		"es:witch_cocktail",
+		"es:witch_secret_of_flight",
+		"es:witch_creative_flight",
+		"es:witch_secret_of_sound",
+		"es:witch_echoloation",
 		"es:doll_botherer"
 	],
-	"impact": 1
+	"impact": 3
 }

@@ -1,7 +1,7 @@
 {
-	"type": "origins:starting_equipment",
 	"name": "Tools of the Trade",
-	"description": "Start with a witch hat, a maid spawn egg and a cake to feed it, a book on witchcraft, and a few leads (usable on players!).",
+	"description": "Start with a witch hat, a maid spawn egg and a cake to feed it, a book on witchcraft, and a few leads.",
+	"type": "origins:starting_equipment",
 	"stacks": [
 		{
 			"item": "bewitchment:hedgewitch_hat",

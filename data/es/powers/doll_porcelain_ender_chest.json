@@ -1,0 +1,8 @@
+{
+	"name": "Hollow",
+	"description": "You can access your ender chest at any time",
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:ender_chest"
+	}
+}
