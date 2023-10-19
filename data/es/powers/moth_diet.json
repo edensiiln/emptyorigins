@@ -11,8 +11,8 @@
 			}
 		},
 		"food_component": {
-			"hunger": 2,
-			"saturation": 1.5,
+			"hunger": 5,
+			"saturation": 1.2,
 			"snack": false
 		}
 	},
@@ -38,8 +38,8 @@
 			}
 		},
 		"food_component": {
-			"hunger": 1,
-			"saturation": 1,
+			"hunger": 3,
+			"saturation": 1.2,
 			"snack": false
 		}
 	},
@@ -65,8 +65,8 @@
 			}
 		},
 		"food_component": {
-			"hunger": 1,
-			"saturation": 1,
+			"hunger": 3,
+			"saturation": 1.2,
 			"snack": true
 		}
 	},
@@ -101,7 +101,7 @@
 		},
 		"food_component": {
 			"hunger": 12,
-			"saturation": 1.5,
+			"saturation": 1.2,
 			"snack": false
 		}
 	},
