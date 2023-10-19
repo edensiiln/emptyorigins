@@ -6,8 +6,7 @@
 		"type": "origins:starting_equipment",
 		"stacks": [
 			{
-				"item": "create:goggles",
-				"slot": 39
+				"item": "create:goggles"
 			}
 		]
 	},

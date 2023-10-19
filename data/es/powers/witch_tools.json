@@ -5,8 +5,7 @@
 	"stacks": [
 		{
 			"item": "bewitchment:hedgewitch_hat",
-			"tag": "{display: {Name: '{\"text\": \"Big Hat\"}'}}",
-			"slot": 39
+			"tag": "{display: {Name: '{\"text\": \"Big Hat\"}'}}"
 		},
 		{
 			"item": "umu_little_maid:little_maid_spawn_egg"
