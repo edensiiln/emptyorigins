@@ -1,0 +1,23 @@
+{
+	"name": "Hop Hop Hop",
+	"description": "You can jump higher, and are immune to fall damage",
+	"type": "origins:multiple",
+	"jump_height": {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"operation": "multiply_base_additive",
+			"value": 0.5
+		}
+	},
+	"fall_resist": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:is_fall"
+		},
+		"modifier": {
+			"operation": "multiply_total_additive",
+			"value": -1
+		}
+	}	
+}

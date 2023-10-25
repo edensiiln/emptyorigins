@@ -1,0 +1,10 @@
+{
+	"name": "Bunny",
+	"description": "hophophop",
+	"icon": "minecraft:rabbit_hide",
+	"powers": [
+		"es:bunny_hophophop",
+		"es:flower_diet"
+	],
+	"impact": 1
+}

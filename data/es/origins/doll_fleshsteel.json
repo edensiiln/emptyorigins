@@ -5,7 +5,7 @@
 	"powers": [
 		"es:doll_fleshsteel_body",
 		"es:doll_fleshsteel_damage",
-		"es:dolls_flower_diet"
+		"es:flower_diet"
 	],
 	"impact": 1
 }
