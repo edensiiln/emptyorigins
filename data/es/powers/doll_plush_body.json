@@ -1,0 +1,70 @@
+{
+	"name": "Plush Body",
+	"description": "You make soft sounds, repair with wool, take more damage from fire and none from falling",
+	"type": "origins:multiple",
+
+	"hurt": {
+		"type": "apugli:custom_hurt_sound",
+		"sound": "minecraft:block.wool.hit"
+	},
+	"step": {
+		"type": "apugli:custom_footstep",
+		"sound": "minecraft:block.wool.step"
+	},
+	"death": {
+		"type": "apugli:custom_death_sound",
+		"sound": "minecraft:block.wool.break"
+	},
+
+	"eat_wool": {
+		"type": "apugli:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:wool"
+			}
+		},
+		"food_component": {
+			"hunger": 5,
+			"saturation": 1.2,
+			"always_edible": true,
+			"snack": false
+		}
+	},
+	"eat_wool_tooltip": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "edible",
+			"color": "gray"
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:wool"
+			}
+		}
+	},
+
+	"damage_fire": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:in_fire"
+		},
+		"modifier": {
+			"operation": "add_base_early",
+			"value": 1.0
+		}
+	},
+	"damage_fall": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:is_fall"
+		},
+		"modifier": {
+			"operation": "multiply_total_additive",
+			"value": 0.0
+		}
+	}
+}

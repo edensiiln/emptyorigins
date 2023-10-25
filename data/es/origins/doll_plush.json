@@ -1,0 +1,11 @@
+{
+	"name": "Plush Doll",
+	"description": "awawa",
+	"icon": "minecraft:white_wool",
+	"powers": [
+		"es:dolls_synthetic",
+		"es:doll_plush_body",
+		"es:flower_diet"
+	],
+	"impact": 2
+}
