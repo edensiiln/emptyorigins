@@ -11,6 +11,10 @@
 			},
 			{
 				"type": "origins:origin",
+				"origin": "es:doll_fleshsteel"
+			},
+			{
+				"type": "origins:origin",
 				"origin": "es:doll_golden"
 			},
 			{

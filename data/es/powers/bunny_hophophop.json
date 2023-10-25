@@ -1,12 +1,20 @@
 {
 	"name": "Hop Hop Hop",
-	"description": "You can jump higher, and are immune to fall damage",
+	"description": "You can jump higher, move faster, and are immune to fall damage",
 	"type": "origins:multiple",
 	"jump_height": {
 		"type": "origins:modify_jump",
 		"modifier": {
 			"operation": "multiply_base_additive",
 			"value": 0.5
+		}
+	},
+	"speed": {
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_base",
+			"value": 0.2
 		}
 	},
 	"fall_resist": {
@@ -19,5 +27,24 @@
 			"operation": "multiply_total_additive",
 			"value": -1
 		}
-	}	
+	}	,
+	"dodge": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:attacker"
+		},
+		"self_action": {
+			"type": "origins:chance",
+			"chance": 0.0,
+			"action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.experience_orb.pickup"
+					}
+				]
+			}
+		}
+	}
 }
