@@ -1,53 +1,28 @@
 {
-	"name": "Ichor",
-	"description": "Other players can harvest your ichor with a glass bottle for its healing properties",
-	"type": "origins:multiple",
-	"countdown_resource": {
-		"type": "origins:resource",
-		"min": 0,
-		"max": 10
-	},
-	"tick_countdown": {
-		"type": "origins:action_over_time",
-		"interval": 20,
-		"entity_action": {
-			"type": "origins:change_resource",
-			"resource": "es:angel_ichor_countdown_resource",
-			"change": -1
-		}
-	},
-	"on_use": {
-		"type": "origins:action_on_being_used",
-		"item_condition": {
-			"type": "origins:ingredient",
-			"ingredient": {
-				"item": "minecraft:glass_bottle"
-			}
-		},
-		"bientity_condition": {
-		    "type": "origins:target_condition",
-		    "condition": {
-		       "type": "origins:resource",
-		       "resource": "es:angel_ichor_countdown_resource",
-		       "comparison": "<=",
-		       "compare_to": 0
-		    }
-		},
-		"bientity_action": {
+	"name": "Cuddly",
+	"description": "Being hugged (right-click) is healthy!",
+	"type": "origins:action_on_being_used",
+	"bientity_action": {
+		"type": "origins:and",
+		"actions": {
 			"type": "origins:target_action",
 			"action": {
-				"type": "origins:damage",
-				"amount": 4,
-				"damage_type": "minecraft:on_fire"
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:regeneration",
+					"duration": 40
+				}
+			},
+			{
+				"type": "origins:actor_action",
+				"action": {
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:regeneration",
+						"duration": 40
+					}
+				}
 			}
-		},
-		"held_item_action": {
-			"type": "origins:consume",
-			"amount": 1
-		},
-		"result_stack": {
-			"item": "minecraft:potion",
-			"tag": "{Potion: \"minecraft:regeneration\",display: {Name: '{\"text\": \"Angel Ichor\"}'}}"
 		}
 	}
 }
