@@ -1,6 +1,6 @@
 {
 	"name": "Flower Diet",
-	"description": "You can eat flowers!",
+	"description": "You can eat flowers! The restore a small amount of health.",
 	"type": "origins:multiple",
 
 	"eat_flower_small": {
@@ -15,6 +15,10 @@
 			"hunger": 1,
 			"saturation": 1.2,
 			"snack": true
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 1
 		}
 	},
 	"flower_small_tooltip": {
@@ -42,6 +46,10 @@
 			"hunger": 3,
 			"saturation": 1.2,
 			"snack": false
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 2
 		}
 	},
 	"flower_tall_tooltip": {
