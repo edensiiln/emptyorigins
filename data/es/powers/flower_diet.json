@@ -14,6 +14,7 @@
 		"food_component": {
 			"hunger": 1,
 			"saturation": 1.2,
+			"always_edible": true,
 			"snack": true
 		},
 		"entity_action": {
@@ -45,6 +46,7 @@
 		"food_component": {
 			"hunger": 3,
 			"saturation": 1.2,
+			"always_edible": true,
 			"snack": false
 		},
 		"entity_action": {
