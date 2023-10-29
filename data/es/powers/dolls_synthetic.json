@@ -1,10 +1,18 @@
 {
 	"name": "Synthetic",
-	"description": "You don't have passive health regeneration, and instead repair yourself using your body's materials. You don't suffer from insomnia.",
+	"description": "You don't have passive health regeneration, and instead repair yourself using your body's materials. You don't suffer from poison, hunger, or insomnia.",
 	"type": "origins:multiple",
 
 	"no_regen": {
 		"type": "origins:disable_regen"
+	},
+
+	"effect_immune": {
+		"type": "origins:effect_immunity",
+		"effects": [
+			"minecraft:poison",
+			"minecraft:hunger"
+		]
 	},
 
 	"sleepless": {

@@ -25,10 +25,14 @@
 			}
 		},
 		"food_component": {
-			"hunger": 5,
-			"saturation": 1.2,
+			"hunger": 0,
+			"saturation": 1,
 			"always_edible": true,
-			"snack": false
+			"snack": true
+		},
+		"entity_action": {
+			"type": "origins:heal",
+			"amount": 6
 		}
 	},
 	"eat_wool_tooltip": {
@@ -49,7 +53,7 @@
 		"type": "origins:modify_damage_taken",
 		"damage_condition": {
 			"type": "origins:in_tag",
-			"tag": "minecraft:in_fire"
+			"tag": "minecraft:is_fire"
 		},
 		"modifier": {
 			"operation": "add_base_early",
