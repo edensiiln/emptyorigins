@@ -40,7 +40,7 @@
 		"item_condition": {
 			"type": "origins:ingredient",
 			"ingredient": {
-				"item": "minecraft:wool"
+				"tag": "minecraft:wool"
 			}
 		}
 	},

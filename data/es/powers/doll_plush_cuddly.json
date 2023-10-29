@@ -4,13 +4,15 @@
 	"type": "origins:action_on_being_used",
 	"bientity_action": {
 		"type": "origins:and",
-		"actions": {
-			"type": "origins:target_action",
-			"action": {
-				"type": "origins:apply_effect",
-				"effect": {
-					"effect": "minecraft:regeneration",
-					"duration": 40
+		"actions": [
+			{
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:regeneration",
+						"duration": 40
+					}
 				}
 			},
 			{
@@ -23,6 +25,6 @@
 					}
 				}
 			}
-		}
+		]
 	}
 }
