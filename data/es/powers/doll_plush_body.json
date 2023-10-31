@@ -38,7 +38,7 @@
 	"eat_wool_tooltip": {
 		"type": "origins:tooltip",
 		"text": {
-			"text": "edible",
+			"text": "edible: 3 hearts",
 			"color": "gray"
 		},
 		"item_condition": {

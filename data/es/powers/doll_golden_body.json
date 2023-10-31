@@ -64,7 +64,7 @@
 		},
 		"entity_action": {
 			"type": "origins:heal",
-			"amount": 10
+			"amount": 12
 		}
 	},
 	"eat_gold_sheet_tooltip": {
@@ -76,7 +76,7 @@
 			}
 		},
 			"text": {
-			"text": "edible: 5 hearts",
+			"text": "edible: 6 hearts",
 			"color": "gray"
 		}
 	}

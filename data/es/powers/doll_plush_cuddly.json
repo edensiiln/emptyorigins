@@ -11,7 +11,8 @@
 					"type": "origins:apply_effect",
 					"effect": {
 						"effect": "minecraft:regeneration",
-						"duration": 40
+						"duration": 40,
+						"amplifier": 2
 					}
 				}
 			},
@@ -21,7 +22,8 @@
 					"type": "origins:apply_effect",
 					"effect": {
 						"effect": "minecraft:regeneration",
-						"duration": 40
+						"duration": 40,
+						"amplifier": 2
 					}
 				}
 			}
